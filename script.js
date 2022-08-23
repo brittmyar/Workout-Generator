@@ -9,15 +9,29 @@ const settings = {
 	}
 };
 
+const $input = $('input[type = "text"]')
+const $bodyPart = $('#bodyPart')
+const $name = $('#name')
+const $target = $('#target')
+const $equipment = $('#equipment')
+const $form = $('form')
+
+$form.on('submit', handleGetData);
+
+function handleGetData(event) {
+    event.preventDefault()
+    userInput = $input.val()
+
 let call=$.ajax(settings).done(function (response) {
-	// console.log(response);
     let data= response
     let filter=data.filter(workout => {
-        return `${workout.bodyPart}`.toLowerCase().includes("cardio")
-        // console.log(workout.bodyPart)
-        
+        return `${workout.bodyPart}`.toLowerCase().includes(userInput)
+       
     })
-    console.log(filter)
-});  
+    console.log(filter);
+
+});
+
+}
 
 // inputvalue.trim().toLowerCase //(this can be on line 16)
