@@ -28,8 +28,17 @@ let call=$.ajax(settings).done(function (response) {
         return `${workout.bodyPart}`.toLowerCase().includes(userInput)
        
     })
+    let number = Math.floor(Math.random() * 50)
     console.log(filter);
+    $bodyPart.text(filter[number].bodyPart);
+    $name.text(filter[number].name);
+    $target.text(filter[number].target);
+    $equipment.text(filter[number].equipment);
+    
 
+//     function getRandomInt(max) {
+//     return Math.floor(Math.random() * max);
+//   }
 });
 
 }
