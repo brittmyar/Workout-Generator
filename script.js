@@ -9,6 +9,15 @@ const settings = {
 	}
 };
 
-$.ajax(settings).done(function (response) {
-	console.log(response);
-});
+let call=$.ajax(settings).done(function (response) {
+	// console.log(response);
+    let data= response
+    let filter=data.filter(workout => {
+        return `${workout.bodyPart}`.toLowerCase().includes("cardio")
+        // console.log(workout.bodyPart)
+        
+    })
+    console.log(filter)
+});  
+
+// inputvalue.trim().toLowerCase //(this can be on line 16)
