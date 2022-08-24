@@ -15,6 +15,7 @@ const $name = $('#name')
 const $target = $('#target')
 const $equipment = $('#equipment')
 const $form = $('form')
+let img = $('img')
 
 $form.on('submit', handleGetData);
 
@@ -25,7 +26,7 @@ function handleGetData(event) {
 let call=$.ajax(settings).done(function (response) {
     let data= response
     let filter=data.filter(workout => {
-        return `${workout.bodyPart}`.toLowerCase().includes(userInput)
+        return `${workout.bodyPart}`.toLowerCase().includes(userInput.toLowerCase().trim())
        
     })
     let number = Math.floor(Math.random() * 50)
@@ -35,6 +36,7 @@ let call=$.ajax(settings).done(function (response) {
     $target.text(filter[number].target);
     $equipment.text(filter[number].equipment);
     
+    $('main').append(`<img id = "img" src = '${filter[number].gifUrl}'/>`);
 
 //     function getRandomInt(max) {
 //     return Math.floor(Math.random() * max);
@@ -42,5 +44,3 @@ let call=$.ajax(settings).done(function (response) {
 });
 
 }
-
-// inputvalue.trim().toLowerCase //(this can be on line 16)
