@@ -38,9 +38,8 @@ let call=$.ajax(settings).done(function (response) {
     
     $('main').append(`<img id = "img" src = '${filter[number].gifUrl}'/>`);
 
-//     function getRandomInt(max) {
-//     return Math.floor(Math.random() * max);
-//   }
+
+
 });
 
 }

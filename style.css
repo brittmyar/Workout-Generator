@@ -1,0 +1,39 @@
+body {
+    background-color: lightcoral;
+    text-align:center;
+}
+
+h1 {
+    background-color: whitesmoke;
+}
+
+p {
+    color: white;
+    font-family: serif;
+    font-weight: 1000
+}
+
+#bodyPart {
+    color: black;
+    font-family: helvetica;
+    font-weight: bold;
+    
+}
+
+#name {
+    color: black;
+    font-family: helvetica;
+    font-weight: bold;
+}
+
+#target {
+    color: black;
+    font-family: helvetica;
+    font-weight: bold;
+}
+
+#equipment {
+    color: black;
+    font-family: helvetica;
+    font-weight: bold;
+}
