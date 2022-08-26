@@ -5,7 +5,7 @@ const settings = {
 	"url": "https://exercisedb.p.rapidapi.com/exercises",
 	"method": "GET",
 	"headers": {
-		"X-RapidAPI-Key": "1f1f7825famsh41c860c09108d3bp124bbfjsn428de2b57b0f",
+		"X-RapidAPI-Key": "7ba91b215amshee765be27b5ceabp1401d2jsn2b06ad9f5578",
 		"X-RapidAPI-Host": "exercisedb.p.rapidapi.com"
 	}
 };
@@ -44,7 +44,6 @@ let call=$.ajax(settings).done(function (response) {
     $equipment.text(filter[number].equipment);
     
     $('main').append(`<img id = "img" src = '${filter[number].gifUrl}'/>`);
-
 
 
 });
