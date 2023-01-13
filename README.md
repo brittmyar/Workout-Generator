@@ -12,7 +12,7 @@ A simple application that allows you to genertate a random workout based on what
 ![project 1](https://user-images.githubusercontent.com/110944297/186728201-0b826d50-1f53-4bcc-bc75-313ce277edfc.jpg)
 
 ## Getting Started
-[Click Here](https://brittmyar.github.io/project-1/) to see the application
+[Click Here](https://master.d36xs25ly16n9l.amplifyapp.com/) to see the application
 
 ## Future Plans
 - Have alternative workouts displayed if it requires equipment
