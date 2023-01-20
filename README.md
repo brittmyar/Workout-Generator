@@ -1,5 +1,5 @@
 # Workout Generator
-A simple application that allows you to genertate a random workout based on what part of your body you input using a workout API
+A simple application that allows you to genertate a random workout based on what part of the body you input using a workout API
 
 ## Technologies Used
 - HTML5
